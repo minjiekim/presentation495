@@ -36,3 +36,11 @@
     return document.createElement(tagName);
   }
 })();
+
+
+const btn = document.querySelector('button');
+
+btn.addEventListener('click', () => {
+  const rndCol = chroma.random();
+  document.body.style.backgroundColor = rndCol;
+});
